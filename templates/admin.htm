@@ -1,0 +1,42 @@
+<!-- <div ng-controller="checkboxController"> -->
+	
+
+		<form  ng-model="form" class="form-horizontal" style="border: 3px solid black; width: 300px; padding: 20px" enctype="multipart/form-data" action="" method="POST">
+			<div class="control-group">
+				 <label class="control-label" for="inputEmail">Title</label>
+				<div class="controls">
+					<input ng-model="title" id="inputTitle" type="text" />
+				</div>
+			</div>
+			<div class="control-group">
+				 <label class="control-label" for="inputPassword">Text</label>
+				<div class="controls">
+					<textarea ng-model="bigText" name="text" id="text" cols="30" rows="10"></textarea>
+				</div>
+			</div>
+			<p>Width: 
+				<select ng-model="width">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+				</select> 
+			</p>
+			<p>Height:
+				<select ng-model="height">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+				</select> 
+			</p>
+			<p>
+				<input ng-model="pic" type="file" name="datafile" size="40">
+			</p>
+				<!-- <input ng-click="addArticle({{title}}, {{bigText}}, {{width}}, {{height}}, {{pic}})" type="submit" value="Save"> -->
+				<input ng-click="[addArticle(title,bigText,width,height,pic),title=null,bigText=null,width=null,height=null,pic=null]" type="submit"  value="Save">
+				<!-- <button ng-click="addArticle({{title}}, {{bigText}}, {{height}}, {{width}}, {{pic}})">Save</button> -->
+				<!-- <button ng-click="addArticle(title,bigText,width,height,pic)">Save</button> -->
+
+		</form> 
+<!-- </div> -->
+
+

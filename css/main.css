@@ -1,0 +1,16 @@
+.tile{
+	margin: 50px;
+	float: left;
+}
+.tileFrame:has(>.tile){
+	background-color: #f00;
+}
+.form-inline{
+	background-color: rgba(0,100,255,.4);
+	width: 100%;
+}
+
+.form-inline{
+	right: 1px;
+
+}

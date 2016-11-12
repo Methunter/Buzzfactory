@@ -1,0 +1,23 @@
+[Fri Nov 11 15:49:34.222232 2016] [authz_core:error] [pid 17412] [client ::1:60550] AH01630: client denied by server configuration: /Users/Sites
+[Fri Nov 11 15:49:35.444309 2016] [authz_core:error] [pid 17412] [client ::1:60550] AH01630: client denied by server configuration: /Users/Sites
+[Fri Nov 11 15:50:06.748202 2016] [authz_core:error] [pid 17448] [client ::1:60555] AH01630: client denied by server configuration: /Users/Sites
+[Fri Nov 11 15:50:13.717487 2016] [authz_core:error] [pid 17452] [client ::1:60556] AH01630: client denied by server configuration: /Users/Sites
+[Fri Nov 11 15:50:19.966827 2016] [authz_core:error] [pid 17448] [client ::1:60560] AH01630: client denied by server configuration: /Users/Sites
+[Fri Nov 11 15:50:23.658511 2016] [authz_core:error] [pid 17448] [client ::1:60560] AH01630: client denied by server configuration: /Users/Sites
+[Sat Nov 12 01:44:12.870862 2016] [:error] [pid 23031] [client ::1:54630] script '/Users/m32sa/Sites/cms/ajax/getTask.php' not found or unable to stat, referer: http://cms/
+[Sat Nov 12 01:44:18.029712 2016] [:error] [pid 23031] [client ::1:54630] script '/Users/m32sa/Sites/cms/ajax/getTask.php' not found or unable to stat, referer: http://cms/
+[Sat Nov 12 02:39:27.601725 2016] [core:error] [pid 23032] (13)Permission denied: [client ::1:55095] AH00132: file permissions deny server access: /Users/m32sa/Sites/cms/Images/pep.jpg, referer: http://cms/
+[Sat Nov 12 02:39:52.305586 2016] [core:error] [pid 23035] (13)Permission denied: [client ::1:55108] AH00132: file permissions deny server access: /Users/m32sa/Sites/cms/Images/pep.jpg, referer: http://cms/
+[Sat Nov 12 02:40:20.732912 2016] [core:error] [pid 23034] (13)Permission denied: [client ::1:55116] AH00132: file permissions deny server access: /Users/m32sa/Sites/cms/Images/pep.jpg, referer: http://cms/
+[Sat Nov 12 02:40:21.447211 2016] [core:error] [pid 23034] (13)Permission denied: [client ::1:55116] AH00132: file permissions deny server access: /Users/m32sa/Sites/cms/Images/pep.jpg, referer: http://cms/
+[Sat Nov 12 02:41:07.665394 2016] [core:error] [pid 23035] (13)Permission denied: [client ::1:55128] AH00132: file permissions deny server access: /Users/m32sa/Sites/cms/Images/pep.jpg, referer: http://cms/
+[Sat Nov 12 02:42:46.434634 2016] [core:error] [pid 23033] (13)Permission denied: [client ::1:55136] AH00132: file permissions deny server access: /Users/m32sa/Sites/cms/Images/pep.jpg, referer: http://cms/
+[Sat Nov 12 02:43:03.381860 2016] [core:error] [pid 23029] (13)Permission denied: [client ::1:55149] AH00132: file permissions deny server access: /Users/m32sa/Sites/cms/Images/pep.jpg, referer: http://cms/
+[Sat Nov 12 02:43:14.223243 2016] [core:error] [pid 23031] (13)Permission denied: [client ::1:55156] AH00132: file permissions deny server access: /Users/m32sa/Sites/cms/Images/pep.jpg, referer: http://cms/
+[Sat Nov 12 02:43:16.190452 2016] [core:error] [pid 23031] (13)Permission denied: [client ::1:55156] AH00132: file permissions deny server access: /Users/m32sa/Sites/cms/Images/pep.jpg, referer: http://cms/
+[Sat Nov 12 02:43:17.227573 2016] [core:error] [pid 23031] (13)Permission denied: [client ::1:55156] AH00132: file permissions deny server access: /Users/m32sa/Sites/cms/Images/pep.jpg, referer: http://cms/
+[Sat Nov 12 02:43:53.293025 2016] [core:error] [pid 23029] (13)Permission denied: [client ::1:55168] AH00132: file permissions deny server access: /Users/m32sa/Sites/cms/Images/pep.jpg, referer: http://cms/
+[Sat Nov 12 02:44:37.446307 2016] [core:error] [pid 23034] (13)Permission denied: [client ::1:55233] AH00132: file permissions deny server access: /Users/m32sa/Sites/cms/Images/pep.jpg, referer: http://cms/
+[Sat Nov 12 02:45:28.549902 2016] [core:error] [pid 23031] (13)Permission denied: [client ::1:55363] AH00132: file permissions deny server access: /Users/m32sa/Sites/cms/Images/pep.jpg, referer: http://cms/
+[Sat Nov 12 02:47:30.927926 2016] [core:error] [pid 23029] (13)Permission denied: [client ::1:55425] AH00132: file permissions deny server access: /Users/m32sa/Sites/cms/Images/pep.jpg, referer: http://cms/
+[Sat Nov 12 12:10:46.768790 2016] [core:error] [pid 27047] (13)Permission denied: [client 127.0.0.1:53425] AH00132: file permissions deny server access: /Users/m32sa/Sites/cms/Images/alb.jpg, referer: http://cms/

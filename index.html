@@ -1,0 +1,43 @@
+<html ng-app="myApp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CMS</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/taskman.css"/>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700" rel="stylesheet" type="text/css">
+
+    </head>
+    <body ng-controller="articlesController">
+    
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span12">
+                   
+
+                    <div ng-include src="'/templates/login.htm'" ></div>
+                    <div ng-controller="checkboxController">
+                        
+                        <tt >value1 = {{checkboxModel.value1}}</tt><br/>
+                    <div ng-include src="'/templates/admin.htm'" ></div>
+                    </div>
+                    <!-- <h1>{{articles}}</h1> -->
+                    <div ng-repeat="article in articles">
+                        <div ng-include src="'/templates/article.htm'" class="tileFrame"></div>
+
+                    </div>
+
+            
+                </div>
+            </div>
+        </div>
+
+    	<script type="text/javascript" src="/js/angular.min.js"></script>
+    	<script type="text/javascript" src="app/app.js"></script>
+        <!-- <script type="text/html" src="js/templates.htm"></script> -->
+
+
+
+    </body>
+</html>
