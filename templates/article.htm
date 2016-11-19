@@ -1,8 +1,10 @@
 
-	<a href="{{article.link}}">
-		<div style="background-color: {{bgcol}}; color:{{color}}; width: {{width}};height: {{height}};  border-width: 5px; border-color: fuchsia ;" class="tile";   >
-			<h1 align="center">{{article.title}}</h1>
-			<p>{{atricle.bigText}}</p>
-			<img src="{{article.pic}}" alt="{{article.title}}" style="width: {{width}}px; height: {{height}}px;" align="center">
+	<a ng-controller="articlesController" href="{{article.link}}">
+		<!-- <div style=" color:{{color}}; width: {{article.width}}px;height: {{article.height}}px;  border-width: 5px; border-color: fuchsia ;" class="tile";   > -->
+		<div>
+			 <h1 align="center">{{article.title}}</h1>
+			<p>{{article.bigText}}</p>
+			
+			<img  src="{{article.pic}}" alt="{{article.title}}" class="img-responsive" align="center"> 
 		</div>
 	</a>

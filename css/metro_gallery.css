@@ -5,7 +5,7 @@ div.metro_gallery {
     font-family: Arial;
     font-size: 11px;
     margin: 20px;
-    background: url(../images/loading.gif) no-repeat 50% 40%;
+    background: url(../Images/loading.gif) no-repeat 50% 40%;
     min-height: 100px;
     -webkit-perspective: 1000px;
        -moz-perspective: 1000px;
@@ -333,7 +333,7 @@ div.metro_lightbox {
     top: -100%;
     left: 50%;
     z-index: 30;
-    background: url('../images/loader.gif') no-repeat 50% 50% #FFFFFF;
+    background: url('../Images/loader.gif') no-repeat 50% 50% #FFFFFF;
     border: 5px solid #000000;
     -webkit-transition: all 0.7s cubic-bezier(0, 1, 1, 1.2);
        -moz-transition: all 0.7s cubic-bezier(0, 1, 1, 1.2);

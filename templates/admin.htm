@@ -1,42 +1,41 @@
-<!-- <div ng-controller="checkboxController"> -->
 	
+<div >
 
-		<form  ng-model="form" class="form-horizontal" style="border: 3px solid black; width: 300px; padding: 20px" enctype="multipart/form-data" action="" method="POST">
-			<div class="control-group">
-				 <label class="control-label" for="inputEmail">Title</label>
-				<div class="controls">
-					<input ng-model="title" id="inputTitle" type="text" />
-				</div>
+	<form  ng-model="form"  enctype="multipart/form-data" action="" method="POST">
+		<div class="control-group">
+			<label class="control-label" for="inputTitle">Title</label>
+			<div class="controls">
+				<input ng-model="title" id="inputTitle" type="text" />
 			</div>
-			<div class="control-group">
-				 <label class="control-label" for="inputPassword">Text</label>
-				<div class="controls">
-					<textarea ng-model="bigText" name="text" id="text" cols="30" rows="10"></textarea>
-				</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="text">Text</label>
+			<div class="controls">
+				<textarea ng-model="bigText" name="text" id="text" cols="30" rows="10"></textarea>
 			</div>
-			<p>Width: 
-				<select ng-model="width">
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-				</select> 
-			</p>
-			<p>Height:
-				<select ng-model="height">
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-				</select> 
-			</p>
-			<p>
-				<input ng-model="pic" type="file" name="datafile" size="40">
-			</p>
-				<!-- <input ng-click="addArticle({{title}}, {{bigText}}, {{width}}, {{height}}, {{pic}})" type="submit" value="Save"> -->
-				<input ng-click="[addArticle(title,bigText,width,height,pic),title=null,bigText=null,width=null,height=null,pic=null]" type="submit"  value="Save">
-				<!-- <button ng-click="addArticle({{title}}, {{bigText}}, {{height}}, {{width}}, {{pic}})">Save</button> -->
-				<!-- <button ng-click="addArticle(title,bigText,width,height,pic)">Save</button> -->
+		</div>
+		<div class="form-group">
+		<label for="width">	Width: </label>
+			<select class="form-control" ng-model="width">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+			</select> 
+		</div>
+		<div class="form-group">
+		<label for="height">Height:</label>
+			<select class="form-control " ng-model="height">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+			</select> 
+		</div class="control-group">
 
-		</form> 
-<!-- </div> -->
+		<div  ng-include src="picsTMPL" class="tileFrame"></div>
+		<button type="button" class="glyphicon glyphicon-floppy-disk btn btn-primary btn-lg btn-block">Save</button>
+	</form> 
+</div>
 
 

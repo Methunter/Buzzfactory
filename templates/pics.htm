@@ -1,0 +1,30 @@
+<div id="ng-app" ng-app="uploaderApp" ng-controller="MyCtrl">
+    <div class="album">
+        <div class="file-button-area">
+            <input type="file" class="file-input" multiple="multiple" oi-file="uploadoptions">
+        </div>
+        <div class="error-area">
+            <div class="alert alert-error" ng-show="errors.length">              
+                <button class="close" ng-click="errors.length=0">&times;</button>
+                <span ng-repeat="error in errors | unique">{{error.msg}}<br/></span>
+            </div>
+        </div>
+        <div ng-show="uploading.length">
+            <div class="progress">
+                <div class="bar" ng-style="{'width': uploading.progress+'%'}"></div>
+            </div>
+        </div>
+        <ul class="upload-area" oi-file="uploadoptions" ui-sortable="{stop: sort}" ng-class="dropClass" ng-model="items">
+            <li class="file-item" ng-repeat="item in items">
+                <button type="button" class="close" ng-click="del(); item.$abort()">&times;</button>
+                <a href="{{item.image}}" ui-fancybox title="№ {{item.id}} <a href='{{item.original}}'>оригинал</a>"><img class="file-item-img" ng-src="{{item.thumb}}"></a>
+                <div ng-show="item.uploading">
+                    <div class="progress">
+                        <div class="bar" ng-style="{'width': item.progress+'%'}"></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        Можно перетаскивать на серую область
+    </div>
+</div>

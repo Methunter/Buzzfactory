@@ -1,16 +1,32 @@
-.tile{
-	margin: 50px;
-	float: left;
-}
-.tileFrame:has(>.tile){
-	background-color: #f00;
-}
-.form-inline{
-	background-color: rgba(0,100,255,.4);
-	width: 100%;
-}
 
-.form-inline{
-	right: 1px;
 
+.file-upload {
+     position: relative;/* Даем возможность делать позиционирование, внутри данного элемента */
+     overflow: hidden;/* Все что выходит за пределы - скрываем */
+     width: 59.5%;/* Задаем ширину кнопки выбора файла */
+     height: 40px;/* Задаем высоту кнопки выбора файла */
+     background: #6da047;
+     border-radius: 3px;
+     padding: 8px 4px;
+     color: #fff;
+     text-align: center;
+}
+.file-upload:hover {
+     background: #7aad55;
+}
+.file-upload input[type="file"]{
+     display: none; /* Обязательно скрываем настоящий Input File */
+}
+.file-upload label {
+     /* Растягиваем label на всю возможную площадь блока .file-upload */
+     display: block;
+     position: relative;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     cursor: pointer;
+}
+.file-upload span {
+     line-height: 24px; /* Делаем вертикальное выравнивание текста, который написан на кнопке */
 }
