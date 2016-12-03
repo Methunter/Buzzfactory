@@ -20,17 +20,19 @@
     <script src="lib/jquery/jquery-ui-1.10.3.custom.min.js"></script>
     <script src="lib/fancybox/jquery.fancybox.pack.js"></script>
     <script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
     <script type="text/javascript" src="bower_components/angular-resource/angular-resource.min.js"></script>
 
 
-    <script type="text/javascript" src="/js/fancybox.js"></script>
-    <script type="text/javascript" src="/js/ui.js"></script>
-    <script type="text/javascript" src="/js/oi.list.js"></script>
-    <script type="text/javascript" src="/js/oi.file.js"></script>
-    <script type="text/javascript" src="/js/uploaderApp.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/fancybox.js"></script>
+    <script src="js/oi.list.js"></script>
+    <script src="js/oi.file.js"></script>
+    <!-- <script type="text/javascript" src="/js/uploaderApp.js"></script> -->
 
     <!-- <script type="text/javascript" src="js/metro_gallery.min.js"></script> -->
-   
+
+
     <script type="text/javascript" src="app/app.js"></script>
 
 
@@ -39,15 +41,15 @@
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" ng-include src="loginTMPL" ></div>
     <div class="container-fluid">
         <div class="row">
-            <div ng-hide="adminVis" class="col-sm-3 col-md-2 sidebar well" ><!-- ng-controller="checkboxController"> -->
-                <div  >
+            <div ng-hide="adminVis" class="{{sidebar}}" ><!-- ng-controller="checkboxController"> -->
+                <div >
                     <div ng-include src="adminTMPL"></div>
                 </div>
             </div>
             <!-- <h1>{{articles}}</h1> -->
             <div class={{artClass}}> 
                 <div class="row placeholdrs metro_gallery vertical">
-                    <div class=" col-sm-9 col-md-3 col-lg-4   "  ng-repeat="article in articles">
+                    <div class=" col-sm-9 col-md-3 col-lg-4   "  ng-repeat="article in articles track by $index">
                         <div class="row placeholders">         
                             <div  ng-include src="articleTMPL" class=""></div>
                         </div>               

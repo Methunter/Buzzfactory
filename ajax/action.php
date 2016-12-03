@@ -13,6 +13,7 @@ $url = substr($_SERVER['REQUEST_URI'],strrpos($_SERVER['SCRIPT_NAME'],'/') + 1);
 list($url,$params) = explode('?',$url,2);
 $method = $_SERVER['REQUEST_METHOD'];
 list($script, $section, $id, $action) = explode('/', $url, 4);
+// echo ("Responce: ". json_decode(trim(file_get_contents('php://input')),1) ."\n\n\nR: " . $r . "\nURL: " . $url . "\nParams: " .$params . "\n\nScript: " . $script . "\nSection: " . $section . "\nId: " . $id . "\nAction: " . $action . "Method: ". $method ."\n\n\n\n");
 //Находим объект и тип действия
 try {
     switch ($section) {     
@@ -22,9 +23,9 @@ try {
             $album = new Album($_REQUEST, array(
                 'tableName'    => 'uploader',
                 'files'        => array(
-                    array('field' => 'original', 'dir' => /*$_SERVER['SERVER_NAME'].*/'/Images/files_original/', 'fit' => true,      'width' => 1200, 'height' => 1200, 'ext' => 'jpg'),
-                    array('field' => 'image',    'dir' => /*$_SERVER['SERVER_NAME'].*/'/Images/files_image/',    'fit' => 'contain', 'width' => 800,  'height' => 800,  'ext' => 'jpg'),
-                    array('field' => 'thumb',    'dir' => /*$_SERVER['SERVER_NAME'].*/'/Images/files_thumb/',    'fit' => 'cover',   'width' => 160,  'height' => 160,  'ext' => 'png')
+                    array('field' => 'original', 'dir' => /*$_SERVER['SERVER_NAME'].*/'../Images/files_original/', 'fit' => true,      'width' => 1200, 'height' => 1200, 'ext' => 'jpg'),
+                    array('field' => 'image',    'dir' => /*$_SERVER['SERVER_NAME'].*/'../Images/files_image/',    'fit' => 'contain', 'width' => 800,  'height' => 800,  'ext' => 'jpg'),
+                    array('field' => 'thumb',    'dir' => /*$_SERVER['SERVER_NAME'].*/'../Images/files_thumb/',    'fit' => 'cover',   'width' => 160,  'height' => 160,  'ext' => 'png')
                 ),
                 'maxSize'          => '4M',
                 'maxSpace'         => '100M',
@@ -51,8 +52,8 @@ try {
     if (isset($res)) echo json_encode($res);
    
 } catch(Exception $e) {
-    Header('HTTP/1.1 503 Service Unavailable');
-    echo json_encode(array('error' => array('msg' => $e->getMessage(), 'code' => $e->getCode())));
+    // Header('HTTP/1.1 503 Service Unavailable');
+    // echo json_encode(array('error' => array('msg' => $e->getMessage(), 'code' => $e->getCode())));
 }
 /**
 * Класс для работы с файлами

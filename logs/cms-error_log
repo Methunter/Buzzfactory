@@ -47,3 +47,9 @@
 [Sat Nov 19 07:27:42.910349 2016] [:error] [pid 1877] [client ::1:52334] script '/Users/m32sa/Sites/cms/action.php' not found or unable to stat, referer: http://cms/
 [Sat Nov 19 07:27:47.600678 2016] [:error] [pid 1877] [client ::1:52334] script '/Users/m32sa/Sites/cms/action.php' not found or unable to stat, referer: http://cms/
 [Sat Nov 19 07:38:44.848410 2016] [:error] [pid 627] [client ::1:52430] script '/Users/m32sa/Sites/cms/uploader.php' not found or unable to stat, referer: http://cms/
+[Sat Nov 19 17:03:24.499466 2016] [:error] [pid 8875] [client ::1:60660] script '/Users/m32sa/Sites/cms/uploader.php' not found or unable to stat, referer: http://cms/
+[Sun Nov 20 14:41:34.587979 2016] [:error] [pid 8883] [client ::1:62958] script '/Users/m32sa/Sites/phpinfo.php' not found or unable to stat
+[Sun Nov 20 14:42:52.172976 2016] [:error] [pid 8881] [client ::1:63188] script '/Users/m32sa/Sites/phpinfo.php' not found or unable to stat
+[Sun Nov 20 14:42:53.961026 2016] [:error] [pid 8881] [client ::1:63188] script '/Users/m32sa/Sites/phpinfo.php' not found or unable to stat
+[Sun Nov 20 14:42:54.862359 2016] [:error] [pid 8881] [client ::1:63188] script '/Users/m32sa/Sites/phpinfo.php' not found or unable to stat
+[Sun Nov 20 14:42:57.243260 2016] [:error] [pid 8881] [client ::1:63188] script '/Users/m32sa/Sites/phpinfo.php' not found or unable to stat

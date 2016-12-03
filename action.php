@@ -48,10 +48,10 @@ try {
                     'zip', 'rar', 'dmg', 'sitx')
             ));
             switch ($method) {
-                case 'GET':    $res = isset($id) ? $album->getOne($id) : $album->get();                  break;
-                case 'PUT':    $res = $album->add();                                                     break;
-                case 'POST':   $res = isset($id) ? $album->update($id, $r) : $sql->savesort($r['sort']); break;
-                case 'DELETE': $res = $album->delete($id);                                               break;
+                case 'GET'	:   $res = isset($id) ? $album->getOne($id) : $album->get();                  break;
+                case 'PUT'	:   $res = $album->add();                                                     break;
+                case 'POST'	:   $res = isset($id) ? $album->update($id, $r) : $sql->savesort($r['sort']); break;
+                case 'DELETE':	$res = $album->delete($id);                                               break;
             }
             break;
             
