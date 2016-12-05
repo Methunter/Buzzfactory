@@ -1,3 +1,4 @@
+
 <html id="ng-app" ng-app="myApp">
 <head>
     <meta charset="utf-8">
@@ -5,8 +6,11 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>CMS</title>
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" />
+    <!-- > ****** JCROP CSSs </!-->
+    <link rel="stylesheet" href="css/jcropStyle.css" />
+    <link rel="stylesheet" href="css/jquery.Jcrop.min.css" type="text/css" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+
     <link rel="stylesheet" type="text/css" href="css/taskman.css"/>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <link rel="stylesheet" href="css/app.css">
@@ -14,51 +18,40 @@
     <link rel="stylesheet" href="css/dashboard.css">
 
 
-    <script src="lib/shim/es5-shim.min.js"></script>
+    <!-- <script src="lib/shim/es5-shim.min.js" type="text/javascript" type="text/javascript"></script> -->
 
-    <script src="lib/jquery/jquery-1.10.2.min.js"></script>
-    <script src="lib/jquery/jquery-ui-1.10.3.custom.min.js"></script>
-    <script src="lib/fancybox/jquery.fancybox.pack.js"></script>
-    <script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
-    <script type="text/javascript" src="bower_components/angular-resource/angular-resource.min.js"></script>
-
-
-    <script type="text/javascript" src="/js/fancybox.js"></script>
-    <script type="text/javascript" src="/js/ui.js"></script>
-    <script type="text/javascript" src="/js/oi.list.js"></script>
-    <script type="text/javascript" src="/js/oi.file.js"></script>
-    <script type="text/javascript" src="/js/uploaderApp.js"></script>
-
-    <!-- <script type="text/javascript" src="js/metro_gallery.min.js"></script> -->
-   
-    <script type="text/javascript" src="app/app.js"></script>
-
+    <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript" type="text/javascript"></script>
+    <script src="bower_components/jquery/dist/jquery.slim.min.js" type="text/ja"></script>
+    <script src="lib/jquery/jquery-ui-1.10.3.custom.min.js" type="text/javascript" type="text/javascript"></script>
+    <script src="lib/fancybox/jquery.fancybox.pack.js" type="text/javascript" type="text/javascript"></script>
+    <!-- > ****** JCROP JSs </!-->
+    <script src="js/jquery.Jcrop.min.js" type="text/javascript" type="text/javascript"></script>
+    <script src="js/jcrop.js" type=""></script>
+    
+    <script  src="bower_components/angular/angular.min.js" type="text/javascript"></script>
+    <script  src="bower_components/angular-resource/angular-resource.min.js" type="text/javascript"></script>
+    <script  src="app/app.js" type="text/javascript"></script>
 
 </head>
 <body ng-controller="articlesController">
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" ng-include src="loginTMPL" ></div>
     <div class="container-fluid">
         <div class="row">
-            <div ng-hide="adminVis" class="col-sm-3 col-md-2 sidebar well" ><!-- ng-controller="checkboxController"> -->
-                <div  >
-                    <div ng-include src="adminTMPL"></div>
-                </div>
-            </div>
-            <!-- <h1>{{articles}}</h1> -->
-            <div class={{artClass}}> 
-                <div class="row placeholdrs metro_gallery vertical">
-                    <div class=" col-sm-9 col-md-3 col-lg-4   "  ng-repeat="article in articles">
-                        <div class="row placeholders">         
-                            <div  ng-include src="articleTMPL" class=""></div>
-                        </div>               
-                    </div>
-                </div>
-            </div>
-
+            <ul ng-show="adminVis" class="{{sidebar}}" ng-include src="adminTMPL"></ul>
+            <ul class="{{mainClass}} row placeholdrs vertical article-list">
+                <li class=" {{artClass}}"  ng-repeat="article in articles " ng-include="articleTMPL">
+                </li>
+            </ul>
         </div>
+        <div class="row">
+                <span class="col-sm-9 col-md-3 col-lg-4 col-lg-offset-4 col-sm-offset-4 col-md-offset-4 main" ng-include="rszrTMPL"></span>
+        </div> 
     </div>
-    <!-- <script type="text/html" src="js/templates.htm"></script> -->
-    <!-- <script src="http://code.angularjs.org/1.1.5/angular.min.js"></script> -->
+<!-- <script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.2'><\/script>".replace("HOST", location.hostname));
+    //]]></script> 
+-->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
 
 </body>
 </html>

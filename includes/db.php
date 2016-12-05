@@ -1,5 +1,5 @@
 <?php 
-$DB_HOST = '127.0.0.1';
+$DB_HOST = 'localhost';
 $DB_USER = 'm32sa';
 $DB_PASS = 'lovelust';
 $DB_NAME = 'Buzzfactory';
