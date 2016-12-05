@@ -1,41 +1,39 @@
 	
-<div >
 
-	<form  ng-model="form"  enctype="multipart/form-data" action="" method="POST">
-		<div class="control-group">
-			<label class="control-label" for="inputTitle">Title</label>
-			<div class="controls">
-				<input ng-model="title" id="inputTitle" type="text" />
-			</div>
-		</div>
-		<div class="control-group">
-			<label class="control-label" for="text">Text</label>
-			<div class="controls">
-				<textarea ng-model="bigText" name="text" id="text" cols="30" rows="10"></textarea>
-			</div>
-		</div>
-		<div class="form-group">
-		<label for="width">	Width: </label>
-			<select class="form-control" ng-model="width">
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-			</select> 
-		</div>
-		<div class="form-group">
-		<label for="height">Height:</label>
-			<select class="form-control " ng-model="height">
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-			</select> 
-		</div class="control-group">
 
-		<div  ng-include src="picsTMPL" class="tileFrame"></div>
-		<button type="button" class="glyphicon glyphicon-floppy-disk btn btn-primary btn-lg btn-block">Save</button>
-	</form> 
-</div>
+<ul class="nav nav-sidebar" ng-model="form"  enctype="multipart/form-data"  >
+	<li class="control-group">
+		<label class="control-label" for="companyName">Company</label>
+		<div class="controls">
+			<input ng-model="companyName" id="companyName" type="text" />
+		</div>
+	</li>
+ 	<li class="control-group">
+		<label class="control-label" for="link">Link</label>
+		<div class="controls">
+			<input ng-model="link" id="link" type="text" />
+		</div>
+	</li>
+	<li class="control-group">
+		<label class="control-label" for="text">Text</label>
+		<div class="controls">
+			<textarea ng-model="bigText" name="text" id="text" cols="20" rows="15"></textarea>
+		</div>
+	</li>
+	<li class="form-group">
+		<label for="width">	Size: </label>
+		<select class="form-control" ng-model="format">
+			<option>1</option>
+			<option>2</option>
+		</select> 
+	</li>
+	<div class="content">
+		<span class="upload_btn" onclick="show_popup('popup_upload')">Click to upload photo</span>
+	</div><!-- content -->  
+
+	<button type="button" class="glyphicon glyphicon-floppy-disk btn btn-primary btn-lg btn-block" ng-click="addArticle(companyName,link,bigText,format); cleanForm()">Save</button>
+
+</ul> 
+
 
 

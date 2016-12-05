@@ -1,10 +1,15 @@
-
-	<a ng-controller="articlesController" href="{{article.link}}">
-		<!-- <div style=" color:{{color}}; width: {{article.width}}px;height: {{article.height}}px;  border-width: 5px; border-color: fuchsia ;" class="tile";   > -->
-		<div>
-			 <h1 align="center">{{article.title}}</h1>
-			<p>{{article.bigText}}</p>
-			
-			<img  src="{{article.pic}}" alt="{{article.title}}" class="img-responsive" align="center"> 
-		</div>
-	</a>
+<a ng-cloak class="article-list-link" href="{{article.link}}">
+	<img  src="{{article.pic}}" alt="{{article.companyName}}" class="img-rounded">
+	<span class="article-summary">
+		<span class="article-summary-date">{{article.date}}</span>
+		<span class="article-summary-w-icon">
+			<span class="article-summary-views" style="display: none;"></span>
+		</span>
+	</span>            
+</a>
+<span class="article-list-rubric">
+	<a href="{{article.link}}">{{article.companyName}}</a>
+</span>
+<h3>
+	<a href="{{article.link}}" class="text-overflow branch-name">{{article.smallText}}</a>
+</h3>

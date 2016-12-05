@@ -1,0 +1,16 @@
+{
+  "name": "cms",
+  "version": "1.0.0",
+  "description": "Server example",
+  "main": "bs-config.js",
+  "scripts": {
+    "start": "node bs-config.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.1.6"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.2"
+  }
+}

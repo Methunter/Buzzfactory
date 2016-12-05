@@ -2,7 +2,7 @@
 
 /* App Module */
 
-angular.module('uploaderApp', ['ngResource', 'oi.list', 'oi.file', 'ui.sortable', 'ui.filters', 'ui.focusblur', 'ui.fancybox'])
+// angular.module('myApp', ['ngResource', 'oi.list', 'oi.file', 'ui.sortable', 'ui.filters', 'ui.focusblur', 'ui.fancybox'])
 
     .factory('Files', function ($resource) {
         return $resource('action.php/files/:fileId', {fileId:'@id'}, {
@@ -20,7 +20,7 @@ angular.module('uploaderApp', ['ngResource', 'oi.list', 'oi.file', 'ui.sortable'
             change: function (file) {
               //Создаем пустой элемент для будущего файла
               $scope.add('after', function (i, data) {
-              
+                $scope.original = data.original;
                 file.$preview($scope.items[i]).then(
                     function (data) {
                       console.log('preview success', data)
@@ -31,7 +31,11 @@ angular.module('uploaderApp', ['ngResource', 'oi.list', 'oi.file', 'ui.sortable'
                 
                 file.$upload(url + data.id, $scope.items[i], data.settings).then(
                     function (data) {
-                      console.log('upload success', data)
+                      // console.log('upload success', data.original)
+                      $rootScope.$broadcast("pictureSet",{
+                        original : this.data.original;
+                        test: 1;
+                      });
                     },
                     function (data) {
                       console.log('upload error', data);

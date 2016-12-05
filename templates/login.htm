@@ -1,29 +1,41 @@
+ <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+ 	<div class="container-fluid">
+ 		<div class="navbar-header">
+ 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+ 				<span class="sr-only">Toggle navigation</span>
+ 				<span class="icon-bar"></span>
+ 				<span class="icon-bar"></span>
+ 				<span class="icon-bar"></span>
+ 			</button>
 
-<div class="container-fluid">
-
-	<form class="form-inline">
-		<fieldset class="navbar-collapse collapse" >
-			<ul class="nav navbar-nav navbar-right">
-				<li><label class="control-label" for="name" contenteditable="true">Name</label>
-					<div>
-						<input id="name" class="form-control" type="text" /> 
-					</div>
-				</li>
-				<li><label for="password">Password</label>
-					<div>
-						<input id="password" class="form-control" type="password" />
-					</div>
-				</li>
-				<li><label class="checkbox"><input type="checkbox" />Remember me</label></li>
-				<li><button class="btn btn-default" type="submit">Log in</button></li>
-				
-			</ul>
-			<label >Admin:
-				<input  type="checkbox" ng-model="checkboxModel"  ng-bind="adminka(checkboxModel)">
-
-			</label>
-			<span ng-bind="checkboxModel"></span>
-
-		</fieldset>
-	</form>
-</div>
+ 			<a class="navbar-brand" href="#">BuzzFactory</a>
+ 		</div>
+ 		<div class="navbar-collapse collapse" aria-expanded="true" style="">
+ 			<ul class="nav navbar-nav navbar-right">
+ 				<li><label class="control-label" for="name" contenteditable="true">Name</label>
+ 					<div>
+ 						<input id="name" class="form-control" type="text" /> 
+ 					</div>
+ 				</li>
+ 				<li><label for="password">Password</label>
+ 					<div>
+ 						<input id="password" class="form-control" type="password" />
+ 					</div>
+ 				</li>
+ 				<li><div><label for="remember" class="checkbox">Remember me</label><input id="remember" type="checkbox" /></div></li>
+ 				<li><div><button class="btn btn-default" type="submit">Log in</button></div></li>
+ 				<li>
+ 					<label for="admin">Admin:</label>
+ 					<input id="admin" type="checkbox" ng-model="checkboxModel"  ng-bind="adminka(checkboxModel)" checked>
+ 					<span ng-bind="checkboxModel"></span>
+ 				</li>
+ 				<li ng-controller="resizeCtrlr" resize notifier="notifyServiceOnChage(params)">
+<!--  					    <div class="fess" ng-style="resizeWithOffset(165)"  resize notifier="notifyServiceOnChage(params)" >
+    						<p>window.height: {{windowHeight}} </p>
+    						<p>window.width: {{windowWidth}} </p>
+    </div>
+ --> 				</li>
+ 			</ul>
+ 		</div>
+ 	</div>
+ </div>

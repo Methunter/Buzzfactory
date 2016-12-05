@@ -1,32 +1,186 @@
+.article-list {
+    font-size: 0
+}
+
+.article-list > li {
+    vertical-align: top;
+    /*margin-bottom: 30px;*/
+/*    max-width: 900px;
+    min-width: 600px;
+    min-height: 300px;
+    max-height: 400px;
+*/ 
+    /*height:270px;*/
+    /*width: 295px;*/
+    box-sizing: border-box;
+    overflow: hidden
+
+    /*
+.article-list > li {
+
+    height:270px;
+    width: 295px;
+}
+.article-list > li .article-list-link img {
+    
+    width:270px
+    height:180px
+}
+    */
+}
+
+.article-list > li h3 {
+    font: 1.33rem / 1.1 'robotocondensed', sans-serif;
+    max-height: 80px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.article-list > li h3 a {
+    text-decoration: inherit;
+    color: #303030
+}
+
+.article-list > li h3 a:hover {
+    color: #ec008c
+}
+
+.article-list > li .article-list-link {
+    display: block;
+    background-color: #303030;
+    position: relative;
+    text-decoration: none
+}
+
+.article-list > li .article-list-link img {
+    -webkit-transition: opacity .35s cubic-bezier(.22, .61, .36, 1) 0s;
+    transition: opacity .35s cubic-bezier(.22, .61, .36, 1) 0s;
+    width:270px;
+    height:180px;
+}
+
+.article-list > li .article-list-link:hover img, .article-list > li .article-list-link:hover .adult {
+    opacity: .5
+}
+
+.article-list > li .article-list-link:hover .article-summary {
+    display: block
+}
+
+.article-list > li .article-list-rubric {
+    display: block;
+    text-transform: uppercase;
+    text-align: left;
+    color: #aaa;
+    font: bold 13px / 1 'robotocondensed', sans-serif;
+    margin: 1em auto .54em
+}
+
+.article-list > li .article-list-rubric a {
+    color: inherit;
+    text-decoration: none
+}
+
+.article-list > li .article-list-rubric a:hover {
+    color: #ec008c
+}
+
+/*
+.article-list > li:nth-child(even) h3 {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto
+}
+*/
+.article-list > li .article-list-rubric {
+    color: #303030
+}
+/*
+.article-list {
+    font-size: 0
+}
+
+.article-list > li {
+    margin: 20px 0px;
+    overflow: hidden;
+    /*width: 31%;
+    height: 295px;
+    border: solid 1px black;
+}
+.article-list > li  img{
+    max-width: 300px;
+    max-height: 200px;
+    width: 100%;
+    height: 100%;
+    /*position: center;
+
+}
+ .article-list > li h3 {
+    font: 1.33rem / 1.1 'robotocondensed', sans-serif;
+    max-height: 80px;
+    overflow: hidden
+}
+
+.article-list > li h3 a {
+    text-decoration: inherit;
+    color: #303030
+}
+
+.article-list > li h3 a:hover {
+    color: #ec008c
+}
+
+.article-list > li .article-list-link {
+    display: block;
+    background-color: #303030;
+    position: relative;
+    text-decoration: none
+}
+
+.article-list > li .article-list-link img {
+    -webkit-transition: opacity .35s cubic-bezier(.22, .61, .36, 1) 0s;
+    transition: opacity .35s cubic-bezier(.22, .61, .36, 1) 0s
+}
+
+.article-list > li .article-list-link:hover img, .article-list > li .article-list-link:hover .adult {
+    opacity: .5
+}
+
+.article-list > li .article-list-link:hover .article-summary {
+    display: block
+}
+
+.article-list > li .article-list-rubric {
+    display: block;
+    text-transform: uppercase;
+    color: #aaa;
+    font: bold 13px / 1 'robotocondensed', sans-serif;
+    margin: 1em auto .54em
+}
+
+.article-list > li .article-list-rubric a {
+    color: inherit;
+    text-decoration: none
+}
+
+.article-list > li .article-list-rubric a:hover {
+    color: #ec018c
+}
+
+.article-list > li:nth-child(even) {
+    background-color: #ebeced;
+    text-align: center
+}
+
+.article-list > li:nth-child(even) h3 {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.article-list > li:nth-child(even) .article-list-rubric {
+    color: #303030
+}
 
 
-.file-upload {
-     position: relative;/* Даем возможность делать позиционирование, внутри данного элемента */
-     overflow: hidden;/* Все что выходит за пределы - скрываем */
-     width: 59.5%;/* Задаем ширину кнопки выбора файла */
-     height: 40px;/* Задаем высоту кнопки выбора файла */
-     background: #6da047;
-     border-radius: 3px;
-     padding: 8px 4px;
-     color: #fff;
-     text-align: center;
-}
-.file-upload:hover {
-     background: #7aad55;
-}
-.file-upload input[type="file"]{
-     display: none; /* Обязательно скрываем настоящий Input File */
-}
-.file-upload label {
-     /* Растягиваем label на всю возможную площадь блока .file-upload */
-     display: block;
-     position: relative;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     cursor: pointer;
-}
-.file-upload span {
-     line-height: 24px; /* Делаем вертикальное выравнивание текста, который написан на кнопке */
-}
+*/
